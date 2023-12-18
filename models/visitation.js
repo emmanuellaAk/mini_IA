@@ -19,5 +19,5 @@ const visitationSchema = mongoose.Schema(
   timestamp:true
 })
 
-const visitation = mongoose.model('visitation',visitationSchemachema)
+const visitation = mongoose.model('visitation',visitationSchema)
 module.exports = visitation;

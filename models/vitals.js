@@ -22,5 +22,5 @@ const vitalSchema = mongoose.Schema(
   timestamp:true
 })
 
-const visitation = mongoose.model('visitation',visitationSchema)
-module.exports = visitation;
+const vitals = mongoose.model('vitals',vitalSchema)
+module.exports = vitals;
