@@ -46,18 +46,7 @@ app.put('/hospital/:id',async(req,res) => {
   }
 })
 
-app.delete('/hospital/:id',async(req,res) => {
-  try{
-     const {id} = req.params
-     const hospital = await Hospital.findByIdAndDelete(id);
-     if(!hospital){
-      return res.status(404).json({message:`cannot find patient with ID:${id}`})
-     } 
-     res.status(200).json(product)
-  } catch (error) {
-     res.status(500).json({message:error.message})
-  }
-})
+
 
 app.post('/visit',async(req,res) =>{
   try{
